@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduce to DOM </title>
+</head>
+<body>
+<h1 id="heading1">This is a heading 1</h1>
+<h1 id="heading2">This is a heading 2</h1>
+<h1 class="heading3">This is a heading</h1>
+
+<P id="para">I am paragraph</P>
+
+<h2 id="pid">The scenery is Beautiful</h2>
+<h3 class="pid2">Are you okey</h3>
+<p>How are your?</p>
+<h4>Where you live?</h4>
+
+<a href="#">Home</a>
+
+<ul>
+    <li><a href="#">Tutorial</a></li>
+    <li>Bangladesh</li>
+</ul>
+<div class="my-div">
+    <a href="#">Contact</a>
+</div>
+
+    <script>
+
+//getElementById
+
+document.getElementById("heading1").innerHTML = "Hello";
+document.getElementById("heading2").innerHTML = "Good";
+document.getElementById("para").innerHTML = "Good Bye";
+
+
+
+
+
+
+var myheading = document.getElementById("heading1");
+myheading.innerHTML = "Hello2";
+
+var myheading = document.getElementById("heading2");
+myheading.innerHTML = "Good2";
+
+var mypara = document.getElementById("para");
+mypara.innerHTML = "Good Bye2";
+
+//getElementByClassName
+document.getElementsByClassName("heading3")[0].innerHTML = "Fine";
+
+var myheading = document.getElementsByClassName("heading3")[0];
+myheading.innerHTML = "Fine2";
+
+//qurrySelector
+document.querySelector("#pid").innerHTML = "right";
+//N.B: For id must be use before #(hash) and for class must be use before .(dot);  
+
+document.querySelector(".pid2").innerHTML = "Yes okey";
+
+document.querySelector("h4").innerHTML = "I live in Dhaka";
+
+
+document.querySelector("a").innerHTML = "Sweet Home";
+document.querySelector("li a").innerHTML = "JS tutorial";
+
+document.querySelector(".my-div a").innerHTML = "New contact";
+
+    </script>
+    
+</body>
+</html>
